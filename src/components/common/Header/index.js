@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'assets/scss/style.scss';
 
@@ -13,7 +14,7 @@ function Header() {
                                 <div className="row align-items-center">
                                     <div className="col-xl-2 col-lg-2">
                                         <div className="logo">
-                                            <a href="index.html"><img src="assets/img/logo/logo.png" alt="" /></a>
+                                            <Link to="/"><img src={require("assets/img/logo/logo.png")} alt="" /></Link>
                                         </div>
                                     </div>
                                     <div className="col-xl-10 col-lg-10">
@@ -21,19 +22,19 @@ function Header() {
                                             <div className="main-menu d-none d-lg-block">
                                                 <nav>
                                                     <ul id="navigation">
-                                                        <li><a href="index.html">Home</a></li>
-                                                        <li><a href="packages.html">Packages</a></li>
-                                                        <li><a href="help.html">Help</a></li>
-                                                        <li><a href="#">Blog</a>
+                                                        <li><Link to="/">Home</Link></li>
+                                                        <li><Link to="packages">Packages</Link></li>
+                                                        <li><Link to="help">Help</Link></li>
+                                                        <li><Link to="#">Blog</Link>
                                                             <ul className="submenu">
-                                                                <li><a href="blog.html">Blog</a></li>
-                                                                <li><a href="blog_details.html">Blog Details</a></li>
-                                                                <li><a href="elements.html">Element</a></li>
+                                                                <li><Link to="blog">Blog</Link></li>
+                                                                <li><Link to="blog_details">Blog Details</Link></li>
+                                                                <li><Link to="elements">Element</Link></li>
                                                             </ul>
                                                         </li>
-                                                        <li><a href="contact.html">Contact</a></li>
-                                                        <li className="button-header margin-left "><a href="register.html" className="btn">Sign Up</a></li>
-                                                        <li className="button-header"><a href="login.html" className="btn3">Sign In</a></li>
+                                                        <li><Link to="contact">Contact</Link></li>
+                                                        <li className="button-header margin-left "><Link to="register" className="btn">Sign Up</Link></li>
+                                                        <li className="button-header"><Link to="login" className="btn3">Sign In</Link></li>
                                                     </ul>
                                                 </nav>
                                             </div>
