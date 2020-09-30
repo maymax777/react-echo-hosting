@@ -4,6 +4,7 @@ import Header from 'components/common/Header';
 import Slider from 'containers/Slider';
 import SearchDomain from 'containers/SearchDomain';
 import TeamService from 'containers/TeamService';
+import Membership from 'containers/Membership';
 
 function Home() {
     return (
@@ -13,6 +14,7 @@ function Home() {
             <Slider />
             <SearchDomain />
             <TeamService />
+            <Membership />
         </>
     )
 }
