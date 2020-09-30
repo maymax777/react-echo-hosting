@@ -5,7 +5,7 @@ function TeamCard({ title, subtitle, image, to }) {
         <div class="col-lg-4 col-md-4 col-sm-6">
             <div class="single-cat">
                 <div class="cat-icon">
-                    <img src={ require(`${image}`) } alt="" />
+                    <img src={ image } alt="" />
                 </div>
                 <div class="cat-cap">
                     <h5><a href={ to }>{ title }</a></h5>
