@@ -1,17 +1,12 @@
 import React from 'react'
 import TeamCard from 'components/TeamCard'
+import SectionHeader from 'components/SectionHeader'
 
 function TeamService() {
     return (
         <section className="team-area section-padding40 section-bg1">
             <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-xl-12">
-                        <div className="section-tittle text-center mb-105">
-                            <h2>Most amazing features</h2>
-                        </div>
-                    </div>
-                </div>
+                <SectionHeader title="Most amazing features"/>                
                 
                 <div className="row">
                     <TeamCard 

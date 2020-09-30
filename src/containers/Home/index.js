@@ -7,6 +7,7 @@ import TeamService from 'containers/TeamService';
 import Membership from 'containers/Membership';
 import About from 'containers/About';
 import Question from 'containers/Question';
+import Testimonial from 'containers/Testimonial';
 
 function Home() {
     return (
@@ -19,6 +20,7 @@ function Home() {
             <Membership />
             <About />
             <Question />
+            <Testimonial />
         </>
     )
 }
