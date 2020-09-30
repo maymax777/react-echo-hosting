@@ -2,21 +2,21 @@ import React from 'react'
 
 function PriceCard({ image, price, title, items }) {
     return (
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
-            <div class="single-card text-center mb-30">
-                <div class="card-top">
+        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+            <div className="single-card text-center mb-30">
+                <div className="card-top">
                     <img src={ image } alt="" />
                     <h4>{ title }</h4>
                     <p>Starting at</p>
                 </div>
-                <div class="card-mid">
+                <div className="card-mid">
                     <h4>${ price }<span>/ month</span></h4>
                 </div>
-                <div class="card-bottom">
+                <div className="card-bottom">
                     <ul>
-                        { items.map(item => (<li>{item}</li>)) }
+                        { items.map(item => (<li key={item}>{item}</li>)) }
                     </ul>
-                    <a href="#" class="borders-btn">Get Started</a>
+                    <a href="#" className="borders-btn">Get Started</a>
                 </div>
             </div>
         </div>

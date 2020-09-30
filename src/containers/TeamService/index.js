@@ -3,17 +3,17 @@ import TeamCard from 'components/common/TeamCard'
 
 function TeamService() {
     return (
-        <section class="team-area section-padding40 section-bg1">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-12">
-                        <div class="section-tittle text-center mb-105">
+        <section className="team-area section-padding40 section-bg1">
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-xl-12">
+                        <div className="section-tittle text-center mb-105">
                             <h2>Most amazing features</h2>
                         </div>
                     </div>
                 </div>
                 
-                <div class="row">
+                <div className="row">
                     <TeamCard 
                         title="Employee Owned" 
                         subtitle="Supercharge your WordPress hosting with detailed website analytics, marketing tools."

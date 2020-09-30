@@ -3,17 +3,17 @@ import PriceCard from 'components/common/PriceCard';
 
 function Membership() {
     return (
-        <section class="pricing-card-area fix">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-8">
-                        <div class="section-tittle text-center mb-90">
+        <section className="pricing-card-area fix">
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-xl-8 col-lg-8">
+                        <div className="section-tittle text-center mb-90">
                             <h2>Choose plan which fit for you</h2>
                             <p>Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div className="row">
                     <PriceCard 
                         title="Shared Hosting" 
                         image={require("assets/img/icon/price1.svg")}
