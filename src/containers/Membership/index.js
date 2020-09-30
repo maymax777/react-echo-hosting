@@ -1,18 +1,15 @@
 import React from 'react'
 import PriceCard from 'components/PriceCard';
+import SectionHeader from 'components/SectionHeader';
 
 function Membership() {
     return (
         <section className="pricing-card-area fix">
             <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-xl-8 col-lg-8">
-                        <div className="section-tittle text-center mb-90">
-                            <h2>Choose plan which fit for you</h2>
-                            <p>Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!</p>
-                        </div>
-                    </div>
-                </div>
+                <SectionHeader 
+                    title="Choose plan which fit for you"
+                    subtitle="Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!"
+                />
                 <div className="row">
                     <PriceCard 
                         title="Shared Hosting" 
