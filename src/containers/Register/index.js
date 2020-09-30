@@ -1,9 +1,9 @@
 import React from 'react';
-import FormInput from 'components/common/FormInput';
-import FormSubmit from 'components/common/FormSubmit';
+import FormInput from 'components/FormInput';
+import FormSubmit from 'components/FormSubmit';
 import { Link } from 'react-router-dom';
-import Preloader from 'components/common/Preloader';
-import BackgroundVideo from 'components/common/BackgroundVideo';
+import Preloader from 'components/Preloader';
+import BackgroundVideo from 'components/BackgroundVideo';
 
 function Signup() {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import PriceCard from 'components/common/PriceCard';
+import PriceCard from 'components/PriceCard';
 
 function Membership() {
     return (

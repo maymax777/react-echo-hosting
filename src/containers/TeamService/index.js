@@ -1,5 +1,5 @@
 import React from 'react'
-import TeamCard from 'components/common/TeamCard'
+import TeamCard from 'components/TeamCard'
 
 function TeamService() {
     return (

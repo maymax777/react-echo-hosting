@@ -1,9 +1,9 @@
 import React from 'react'
-import Form from 'components/common/Form'
+import Form from 'components/Form'
 import { Link } from 'react-router-dom'
-import Preloader from 'components/common/Preloader'
-import FormInput from 'components/common/FormInput'
-import FormSubmit from 'components/common/FormSubmit'
+import Preloader from 'components/Preloader'
+import FormInput from 'components/FormInput'
+import FormSubmit from 'components/FormSubmit'
 
 function Login() {
     return (
