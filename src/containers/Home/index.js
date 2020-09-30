@@ -8,6 +8,7 @@ import Membership from 'containers/Membership';
 import About from 'containers/About';
 import Question from 'containers/Question';
 import Testimonial from 'containers/Testimonial';
+import Footer from 'components/Footer';
 
 function Home() {
     return (
@@ -21,6 +22,7 @@ function Home() {
             <About />
             <Question />
             <Testimonial />
+            <Footer />
         </>
     )
 }
