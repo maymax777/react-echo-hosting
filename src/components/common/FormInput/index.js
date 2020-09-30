@@ -1,10 +1,10 @@
 import React from 'react'
 
-function FormInput({}) {
+function FormInput({ className, label, placeholder, type, name }) {
     return (
-        <div class="form-input">
-            <label for="name">Full name</label>
-            <input type="text" name="name" placeholder="Full name" />
+        <div class={className}>
+            <label for={name}>{label}</label>
+            <input type={type} name={name} placeholder={placeholder} />
         </div>
     )
 }

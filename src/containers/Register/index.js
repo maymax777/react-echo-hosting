@@ -1,5 +1,6 @@
 import React from 'react';
 import FormInput from 'components/common/FormInput';
+import FormSubmit from 'components/common/FormSubmit';
 import { Link } from 'react-router-dom';
 import Preloader from 'components/common/Preloader';
 import BackgroundVideo from 'components/common/BackgroundVideo';
@@ -20,26 +21,11 @@ function Signup() {
                     </div>
                     <h2>Registration Here</h2>
 
-                    <div className="form-input">
-                        <label htmlFor="name">Full name</label>
-                        <input type="text" name="name" placeholder="Full name" />
-                    </div>
-                    <div className="form-input">
-                        <label htmlFor="name">Email Address</label>
-                        <input type="email" name="email" placeholder="Email Address" />
-                    </div>
-                    <div className="form-input">
-                        <label htmlFor="name">Password</label>
-                        <input type="password" name="password" placeholder="Password" />
-                    </div>
-                    <div className="form-input">
-                        <label htmlFor="name">Confirm Password</label>
-                        <input type="password" name="password" placeholder="Confirm Password" />
-                    </div>
-                    <div className="form-input pt-30">
-                        <input type="submit" name="submit" value="Registration" />
-                    </div>
-
+                    <FormInput className="form-input" label="Full name" placeholder="Full name" type="text" name="Full name"/>
+                    <FormInput className="form-input" label="Email Address" placeholder="Email Address" type="email" name="Email Address"/>
+                    <FormInput className="form-input" label="Password" placeholder="Password" type="password" name="Password"/>
+                    <FormInput className="form-input" label="Confirm Password" placeholder="Confirm Password" type="password" name="Confirm Password"/>                    
+                    <FormSubmit className="form-input pt-30" value="Registration" />
                     <Link to="login" className="registration">login</Link>
                 </div>
             </form>

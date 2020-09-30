@@ -2,6 +2,8 @@ import React from 'react'
 import Form from 'components/common/Form'
 import { Link } from 'react-router-dom'
 import Preloader from 'components/common/Preloader'
+import FormInput from 'components/common/FormInput'
+import FormSubmit from 'components/common/FormSubmit'
 
 function Login() {
     return (
@@ -17,21 +19,12 @@ function Login() {
                             <Link to="/"><img src={require("assets/img/logo/loder.png")} alt="" /></Link>
                         </div>
                         <h2>Login Here</h2>
-                        <div className="form-input">
-                            <label htmlFor="name">Email</label>
-                            <input type="email" name="email" placeholder="Email" />
-                        </div>
-                        <div className="form-input">
-                            <label htmlFor="name">Password</label>
-                            <input type="password" name="password" placeholder="Password" />
-                        </div>
-                        <div className="form-input pt-30">
-                            <input type="submit" name="submit" value="login" />
-                        </div>
-
+                        
+                        <FormInput className="form-input" label="Email" placeholder="Email" type="email" name="Email"/>
+                        <FormInput className="form-input" label="Password" placeholder="Password" type="password" name="Password"/>
+                        <FormSubmit className="form-input pt-30" value="Login" />
 
                         <Link to="#" className="forget">Forget Password</Link>
-
                         <Link to="register" className="registration">Registration</Link>
                     </div>
                 </form>
