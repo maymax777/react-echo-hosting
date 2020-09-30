@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
-function Button() {
+function Button({ label, to }) {
     return (
-        <div>
-            
+        <div className="more-btn text-center mt-20">
+            <Link to={ to } className="btn">{ label }</Link>
         </div>
     )
 }

@@ -5,6 +5,8 @@ import Slider from 'containers/Slider';
 import SearchDomain from 'containers/SearchDomain';
 import TeamService from 'containers/TeamService';
 import Membership from 'containers/Membership';
+import About from 'containers/About';
+import Question from 'containers/Question';
 
 function Home() {
     return (
@@ -15,6 +17,8 @@ function Home() {
             <SearchDomain />
             <TeamService />
             <Membership />
+            <About />
+            <Question />
         </>
     )
 }
