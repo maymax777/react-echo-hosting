@@ -1,19 +1,16 @@
 import React from 'react'
 import QuestionCard from 'components/QuestionCard';
 import Button from 'components/Button';
+import SectionHeader from 'components/SectionHeader';
 
 function Question() {
     return (
         <section class="ask-questions section-bg1 section-padding30 fix">
             <div class="container">                
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-9 col-md-10 ">                        
-                        <div class="section-tittle text-center mb-90">
-                            <h2>Frequently ask questions</h2>
-                            <p>Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!</p>
-                        </div>
-                    </div>
-                </div>
+                <SectionHeader 
+                    title="Frequently ask questions"
+                    subtitle="Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!"
+                />
                 <div class="row">
                     <QuestionCard 
                         question="Why can't people connect to the web server on my PC?"
