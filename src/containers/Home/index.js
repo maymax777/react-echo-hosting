@@ -10,6 +10,7 @@ import Question from 'containers/Question';
 import Testimonial from 'containers/Testimonial';
 import Footer from 'components/Footer';
 import ScrollUp from 'components/ScrollUp';
+import ChatBox from 'components/ChatBox';
 
 function Home() {
     return (
@@ -25,6 +26,7 @@ function Home() {
             <Testimonial />
             <Footer />
             <ScrollUp />
+            <ChatBox />
         </>
     )
 }

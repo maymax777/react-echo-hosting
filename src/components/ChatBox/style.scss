@@ -1,0 +1,8 @@
+* {box-sizing: border-box;}
+.chat-container {
+    position: fixed; 
+    bottom: 0; 
+    right: 0; 
+    margin: 10px;
+    z-index: 9999;
+}

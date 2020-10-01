@@ -465,13 +465,13 @@ hr {
 /* scrollUp */
 	#scrollUp,#back-top  {
 		background:$theme-color;
-		height: 50px;
-		width: 50px;
-		right: 31px;
-		bottom: 18px;
+		height: 54px;
+		width: 54px;
+		left: 32px;
+		bottom: 32px;
 		position: fixed;
 		@media #{$xs}{
-			right: 16px;
+			left: 16px;
 		}
 		color: #fff;
 		font-size: 20px;
