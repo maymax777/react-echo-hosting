@@ -1,9 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navigation from 'components/Navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'assets/scss/style.scss';
 
 function Header() {
+    const menu = [
+        {to: '/', label: 'Home', submenu: []},
+        {to: '/', label: 'Packages', submenu: []},
+        {to: '/', label: 'Help', submenu: []},
+        {to: '/', label: 'Blog', submenu: [
+            {to: '/', label: 'Blog'},
+            {to: '/', label: 'Blog Details'},
+            {to: '/', label: 'Element'}
+        ]},
+        {to: '/', label: 'Contact', submenu: []}        
+    ];
     return (
         <div>
             <header>
@@ -18,27 +30,7 @@ function Header() {
                                         </div>
                                     </div>
                                     <div className="col-xl-10 col-lg-10">
-                                        <div className="menu-wrapper d-flex align-items-center justify-content-end">
-                                            <div className="main-menu d-none d-lg-block">
-                                                <nav>
-                                                    <ul id="navigation">
-                                                        <li><Link to="/">Home</Link></li>
-                                                        <li><Link to="packages">Packages</Link></li>
-                                                        <li><Link to="help">Help</Link></li>
-                                                        <li><Link to="#">Blog</Link>
-                                                            <ul className="submenu">
-                                                                <li><Link to="blog">Blog</Link></li>
-                                                                <li><Link to="blog_details">Blog Details</Link></li>
-                                                                <li><Link to="elements">Element</Link></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li><Link to="contact">Contact</Link></li>
-                                                        <li className="button-header margin-left "><Link to="register" className="btn">Sign Up</Link></li>
-                                                        <li className="button-header"><Link to="login" className="btn3">Sign In</Link></li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                        </div>
+                                        <Navigation menu={menu} />                                        
                                     </div>
                                     <div className="col-12">
                                         <div className="mobile_menu d-block d-lg-none"></div>
