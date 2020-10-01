@@ -8,7 +8,7 @@ import BackgroundVideo from 'components/BackgroundVideo';
 function Signup() {
     return (
         <>
-        <BackgroundVideo url="assets/img/login-bg.mp4"/>
+        <BackgroundVideo url={require("assets/img/login-bg.mp4")}/>
         <Preloader />
         <main className="login-body" data-vide-bg="assets/img/login-bg.mp4">
 
