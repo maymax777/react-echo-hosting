@@ -5,7 +5,7 @@ import Button from 'components/Button';
 function Navigation({ menu }) {
     const menuItem = item => {
         return (
-            <li>
+            <li key={item.label}>
                 <Link to={ item.to }>{ item.label }</Link>
                 { item.submenu.length > 0 ? subMenuItem(item.submenu): [] }
             </li>
@@ -14,7 +14,7 @@ function Navigation({ menu }) {
     const subMenuItem = subItem => {
         return (
             <ul className="submenu">
-                { subItem.map(item => <li><Link to={ item.to }>{ item.label }</Link></li>) }
+                { subItem.map(item => <li key={item.label}><Link to={ item.to }>{ item.label }</Link></li>) }
             </ul>
         );
     }

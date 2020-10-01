@@ -1,13 +1,13 @@
 const theme = {
-    background: 'darkgray',
+    background: '#eff',
     fontFamily: 'Helvetica Neue',
     headerBgColor: '#F067FF',
     headerFontColor: '#fff',
     headerFontSize: '15px',
-    botBubbleColor: 'gray',
+    botBubbleColor: 'darkgray',
     botFontColor: 'white',
-    userBubbleColor: 'white',
-    userFontColor: '#4a4a4a',
+    userBubbleColor: 'darkgray',
+    userFontColor: 'snow',
 };
 
 const steps = [
@@ -40,7 +40,7 @@ const steps = [
 
 const config = {
     width: "300px",
-    height: "400px",
+    height: "450px",
     floating: true
   };
 

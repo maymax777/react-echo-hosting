@@ -2,16 +2,16 @@ import React from 'react'
 
 function TestimonialCard({ content, name, job, avatar }) {
     return (
-        <div class="single-testimonial text-center mt-55">
-            <div class="testimonial-caption">
-                <img src={require("assets/img/icon/quotes-sign.png")} alt="" class="quotes-sign" />
+        <div className="single-testimonial text-center mt-55">
+            <div className="testimonial-caption">
+                <img src={require("assets/img/icon/quotes-sign.png")} alt="" className="quotes-sign" />
                 <p>{ content }</p>
             </div>                                    
-            <div class="testimonial-founder d-flex align-items-center justify-content-center">
-                <div class="founder-img">
+            <div className="testimonial-founder d-flex align-items-center justify-content-center">
+                <div className="founder-img">
                     <img src={ avatar } alt="" />
                 </div>
-                <div class="founder-text">
+                <div className="founder-text">
                     <span>{ name }</span>
                     <p>{ job }</p>
                 </div>
