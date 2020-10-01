@@ -1,6 +1,7 @@
 import React from 'react';
 import FooterSection from 'components/FooterSection';
 import FooterContact from 'components/FooterContact';
+import FooterBottom from 'components/FooterBottom';
 
 function Footer() {
     return (
@@ -51,19 +52,7 @@ function Footer() {
                     </div>
                 </div>
                 
-                <div className="footer-bottom-area">
-                    <div className="container">
-                        <div className="footer-border">
-                            <div className="row">
-                                <div className="col-xl-12">
-                                    <div className="footer-copy-right text-center">                                        
-                                        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i className="fa fa-heart" aria-hidden="true"></i> by <a href="https://github.com/maymax777" target="_blank">maymax777</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <FooterBottom />
             </div>
         </footer>
     )
