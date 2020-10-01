@@ -1,6 +1,6 @@
 import React from 'react'
 import FooterForm from 'components/FooterForm';
-import FooterSocialIcons from 'components/FooterSocialIcons';
+import SocialIcons from 'components/SocialIcons';
 
 function FooterContact() {
     return (
@@ -14,7 +14,7 @@ function FooterContact() {
                 </div>
                 
                 <FooterForm />
-                <FooterSocialIcons />
+                <SocialIcons />
             </div>
         </div>
     )
