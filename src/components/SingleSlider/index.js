@@ -12,7 +12,7 @@ function SingleSlider({ title, subtitle, content}) {
                             <p data-animation="fadeInLeft" data-delay=".8s">{ content }</p>
                             
                             <div className="slider-btns">                                        
-                                <a data-animation="fadeInLeft" data-delay="1s" href="industries.html" className="btn radius-btn">get started</a>
+                                <a data-animation="fadeInLeft" data-delay="1s" href="#" className="btn radius-btn">get started</a>
                             </div>
                         </div>
                     </div>
