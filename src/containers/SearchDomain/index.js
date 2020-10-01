@@ -1,6 +1,7 @@
 import React from 'react'
 import 'assets/css/themify-icons.css';
 import 'assets/css/fontawesome-all.min.css';
+import SearchForm from 'components/SearchForm';
 
 function SearchDomain() {
     return (
@@ -11,22 +12,8 @@ function SearchDomain() {
                        <h2>Search new domain</h2>
                        <p>Supercharge your WordPress hosting with detailed  website analytics, marketing tools.</p>
                    </div>
-                   <div className="col-xl-8 col-lg-7">
-                    
-                        <form action="#" className="search-box">
-                            <div className="input-form">
-                                <input type="text" placeholder="Search for a domain" />
-                                
-                                <div className="search-form">
-                                    <button><i className="ti-search"></i></button>
-                                </div>
-                                
-                                <div className="world-form">
-                                    <i className="fas fa-globe"></i>
-                                </div>
-                            </div>
-                        </form>	
-                        
+                   <div className="col-xl-8 col-lg-7">                    
+                        <SearchForm />                        
                         <div className="single-domain pt-30 pb-30">
                             <ul>
                                 <li><span>.com</span> <p>$15.99</p></li>
