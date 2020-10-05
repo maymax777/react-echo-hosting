@@ -4,4 +4,4 @@ export const ERROR_MSG_EMAIL_PATTERN = "Email format is incorrect";
 
 export const ERROR_MSG_REQUIRED = "This field is required";
 
-export const API_HOST = "https://api.raisely.com/v3";
+export const API_HOST = process.env.LOCAL_HOST;
