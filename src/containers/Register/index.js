@@ -4,8 +4,13 @@ import FormSubmit from 'components/Form/FormSubmit';
 import { Link } from 'react-router-dom';
 import Preloader from 'components/Preloader';
 import BackgroundVideo from 'components/BackgroundVideo';
+import { useForm } from 'react-hook-form';
+import { ERROR_MSG_REQUIRED } from 'utils/constants';
 
 function Signup() {
+    const { register, handleSubmit, watch, errors } = useForm();
+    const onSubmit = data => console.log(data);
+
     return (
         <>
         <BackgroundVideo url={require("assets/img/login-bg.mp4")}/>
