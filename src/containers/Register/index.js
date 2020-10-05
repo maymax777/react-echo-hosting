@@ -1,6 +1,6 @@
 import React from 'react';
-import FormInput from 'components/FormInput';
-import FormSubmit from 'components/FormSubmit';
+import FormInput from 'components/Form/FormInput';
+import FormSubmit from 'components/Form/FormSubmit';
 import { Link } from 'react-router-dom';
 import Preloader from 'components/Preloader';
 import BackgroundVideo from 'components/BackgroundVideo';

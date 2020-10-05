@@ -2,8 +2,8 @@ import React from 'react'
 import Form from 'components/Form'
 import { Link } from 'react-router-dom'
 import Preloader from 'components/Preloader'
-import FormInput from 'components/FormInput'
-import FormSubmit from 'components/FormSubmit'
+import FormInput from 'components/Form/FormInput'
+import FormSubmit from 'components/Form/FormSubmit'
 import { useForm } from 'react-hook-form';
 
 function Login() {
