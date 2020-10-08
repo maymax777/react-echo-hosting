@@ -24,6 +24,7 @@ export default function usePromise(apiAction) {
 
         if (param) process();
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [param]);
 
     return [{ loading, resolved, error }, setParam];
